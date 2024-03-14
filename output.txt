@@ -1,0 +1,711 @@
+input1.bmp:
+coordinates accuracy IoU
+(533, 410) 0.902123 0.821697
+average precision:0.902123 processing time(ms):2332.36
+
+test001.bmp:
+coordinates accuracy IoU
+(779, 360) 0.691548 0.528524
+(739, 366) 0.652984 0.484763
+(759, 360) 0.647779 0.479048
+(779, 353) 0.626131 0.455743
+(719, 366) 0.605666 0.434377
+average precision:0.644822 processing time(ms):5910.98
+
+test002.bmp:
+coordinates accuracy IoU
+(560, 373) 0.96262 0.927934
+(566, 373) 0.944108 0.894134
+(560, 380) 0.934852 0.877674
+(553, 373) 0.897828 0.814599
+(553, 380) 0.87193 0.772939
+average precision:0.922268 processing time(ms):2751.94
+
+test003.bmp:
+coordinates accuracy IoU
+(1009, 240) 0.896226 0.811966
+(1009, 250) 0.837264 0.720081
+(1009, 260) 0.778302 0.637066
+average precision:0.837264 processing time(ms):2423.33
+
+test004.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):5814.07
+
+test005.bmp:
+coordinates accuracy IoU
+(329, 373) 0.847692 0.735647
+(329, 366) 0.782485 0.64269
+(339, 366) 0.752581 0.603311
+average precision:0.794253 processing time(ms):3395.22
+
+test006.bmp:
+coordinates accuracy IoU
+(1073, 400) 0.910967 0.836492
+(1066, 400) 0.902123 0.821697
+(1080, 400) 0.849057 0.737705
+(1086, 400) 0.795991 0.661117
+(1093, 390) 0.783019 0.643411
+average precision:0.848231 processing time(ms):1539
+
+test007.bmp:
+coordinates accuracy IoU
+(419, 260) 0.036198 0.0184326
+(399, 260) 0.0338321 0.0172071
+(379, 260) 0.0314663 0.0159846
+average precision:0.0338321 processing time(ms):3481.62
+
+test008.bmp:
+coordinates accuracy IoU
+(993, 410) 0.804835 0.673409
+(986, 410) 0.766509 0.621415
+(999, 410) 0.758844 0.611401
+(979, 410) 0.712854 0.553825
+(1006, 410) 0.705189 0.544627
+average precision:0.749646 processing time(ms):1560.94
+
+test009.bmp:
+coordinates accuracy IoU
+(439, 390) 0.854114 0.745375
+average precision:0.854114 processing time(ms):6031.76
+
+test010.bmp:
+coordinates accuracy IoU
+(0, 310) 0.860554 0.755239
+(6, 310) 0.827771 0.706152
+(0, 320) 0.798644 0.664785
+(13, 310) 0.770401 0.626546
+(6, 320) 0.768219 0.623666
+average precision:0.805118 processing time(ms):948.748
+
+test011.bmp:
+coordinates accuracy IoU
+(1419, 360) 0.938186 0.883569
+(1399, 380) 0.90723 0.830211
+(1399, 360) 0.878429 0.783212
+(1379, 360) 0.818672 0.693009
+(1359, 360) 0.758915 0.611493
+average precision:0.860286 processing time(ms):5553.81
+
+test012.bmp:
+coordinates accuracy IoU
+(1280, 393) 0.943841 0.893655
+(1286, 393) 0.907885 0.83131
+(1273, 393) 0.880919 0.78718
+(1280, 386) 0.878426 0.783209
+(1286, 386) 0.844963 0.731546
+average precision:0.891207 processing time(ms):2527.2
+
+test013.bmp:
+coordinates accuracy IoU
+(569, 280) 0.823192 0.699512
+(559, 260) 0.816706 0.690197
+(579, 280) 0.767571 0.622811
+(569, 260) 0.765016 0.619454
+(589, 300) 0.762264 0.615854
+average precision:0.78695 processing time(ms):2647.44
+
+test014.bmp:
+coordinates accuracy IoU
+(1419, 400) 0.981191 0.963077
+(1419, 410) 0.919867 0.851623
+average precision:0.950529 processing time(ms):4592.52
+
+test015.bmp:
+coordinates accuracy IoU
+(486, 340) 0.94375 0.893491
+(493, 340) 0.881427 0.787992
+(573, 340) 0.169163 0.0923964
+(573, 350) 0.15796 0.0857527
+(580, 340) 0.10684 0.0564345
+average precision:0.451828 processing time(ms):1288.37
+
+test016.bmp:
+coordinates accuracy IoU
+(773, 320) 0.91875 0.849711
+(779, 320) 0.866745 0.764828
+(766, 320) 0.858078 0.751433
+(773, 310) 0.85625 0.748634
+(779, 310) 0.807783 0.677547
+average precision:0.861521 processing time(ms):1525.76
+
+test017.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):6669.65
+
+test018.bmp:
+coordinates accuracy IoU
+(539, 340) 0.822414 0.698389
+(519, 340) 0.775862 0.633803
+(559, 340) 0.77069 0.626928
+average precision:0.789655 processing time(ms):7694.17
+
+test019.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):12622.9
+
+test020.bmp:
+coordinates accuracy IoU
+(1139, 360) 0.8625 0.758242
+(1149, 360) 0.8 0.666667
+(1159, 360) 0.7375 0.584158
+(1169, 360) 0.675 0.509434
+(1169, 350) 0.632547 0.462573
+average precision:0.741509 processing time(ms):4799.68
+
+test021.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):13891.9
+
+test022.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):4571.36
+
+test023.bmp:
+coordinates accuracy IoU
+(0, 640) 0.857857 0.751094
+(19, 640) 0.8279 0.706339
+(0, 660) 0.79614 0.661323
+(39, 640) 0.773433 0.630567
+(19, 660) 0.768339 0.623823
+average precision:0.804734 processing time(ms):4911.68
+
+test024.bmp:
+coordinates accuracy IoU
+(239, 440) 0.811128 0.682268
+(259, 420) 0.802508 0.670157
+(259, 440) 0.752351 0.603015
+(279, 420) 0.739812 0.587065
+average precision:0.77645 processing time(ms):4865.87
+
+test025.bmp:
+coordinates accuracy IoU
+(519, 340) 0.932132 0.87289
+(499, 340) 0.908307 0.832017
+(539, 340) 0.872571 0.773947
+(479, 340) 0.848746 0.737236
+(559, 350) 0.845102 0.731754
+average precision:0.881371 processing time(ms):3430.67
+
+test026.bmp:
+coordinates accuracy IoU
+(1399, 380) 0.84951 0.73839
+(1399, 360) 0.791125 0.65443
+average precision:0.820317 processing time(ms):5656.66
+
+test027.bmp:
+coordinates accuracy IoU
+(459, 526) 0.81761 0.691489
+(459, 533) 0.763617 0.617622
+(469, 526) 0.754717 0.606061
+(469, 533) 0.704877 0.544255
+(479, 533) 0.646137 0.477255
+average precision:0.737392 processing time(ms):4031.13
+
+test028.bmp:
+coordinates accuracy IoU
+(919, 320) 0.943907 0.893772
+(899, 340) 0.770709 0.626954
+average precision:0.857308 processing time(ms):5457.41
+
+test029.bmp:
+coordinates accuracy IoU
+(809, 420) 0.825039 0.702185
+(819, 420) 0.765684 0.620331
+(829, 420) 0.706329 0.545988
+(839, 420) 0.646973 0.478167
+(849, 420) 0.587618 0.416047
+average precision:0.706329 processing time(ms):3916.26
+
+test030.bmp:
+coordinates accuracy IoU
+(1179, 459) 0.298101 0.175158
+(1159, 459) 0.286745 0.167369
+(1179, 466) 0.232892 0.131793
+(1159, 466) 0.22402 0.126139
+(1199, 466) 0.218105 0.122401
+average precision:0.251973 processing time(ms):8193.92
+
+test031.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):5816.8
+
+test032.bmp:
+coordinates accuracy IoU
+(646, 350) 0.878066 0.782636
+(640, 340) 0.833962 0.71521
+(646, 340) 0.817924 0.691939
+(640, 330) 0.772641 0.629516
+(646, 330) 0.757783 0.610025
+average precision:0.812075 processing time(ms):2265.87
+
+test033.bmp:
+coordinates accuracy IoU
+(879, 340) 0.865498 0.762887
+(879, 360) 0.809659 0.680191
+(899, 340) 0.804761 0.673305
+(899, 360) 0.752841 0.603645
+(899, 380) 0.700921 0.539552
+average precision:0.786736 processing time(ms):6389.77
+
+test034.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):7025.8
+
+test035.bmp:
+coordinates accuracy IoU
+(346, 410) 0.938208 0.883607
+(340, 410) 0.883019 0.790541
+average precision:0.910613 processing time(ms):1433.62
+
+test036.bmp:
+coordinates accuracy IoU
+(139, 360) 0.847484 0.735334
+(149, 360) 0.792453 0.65625
+(159, 360) 0.737421 0.58406
+(169, 350) 0.731132 0.576208
+(169, 360) 0.68239 0.5179
+average precision:0.758176 processing time(ms):3620.75
+
+test037.bmp:
+coordinates accuracy IoU
+(366, 360) 0.923172 0.857307
+(373, 360) 0.859817 0.754105
+average precision:0.891495 processing time(ms):677.503
+
+test038.bmp:
+coordinates accuracy IoU
+(1139, 300) 0.834965 0.716686
+average precision:0.834965 processing time(ms):3518.63
+
+test039.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):7252.18
+
+test040.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):5102.06
+
+test041.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8062.64
+
+test042.bmp:
+coordinates accuracy IoU
+(620, 440) 0.907193 0.83015
+(626, 440) 0.851651 0.741631
+(593, 440) 0.805366 0.674152
+(633, 440) 0.786851 0.648603
+(633, 450) 0.766804 0.621803
+average precision:0.823573 processing time(ms):1063.45
+
+test043.bmp:
+coordinates accuracy IoU
+(239, 360) 0.843574 0.729466
+(239, 340) 0.787147 0.649005
+(259, 360) 0.784992 0.64608
+(259, 340) 0.732484 0.57789
+average precision:0.787049 processing time(ms):5129.44
+
+test044.bmp:
+coordinates accuracy IoU
+(1326, 330) 0.860908 0.755784
+(1326, 340) 0.838974 0.722614
+(1326, 320) 0.806073 0.675144
+(1333, 330) 0.796108 0.661279
+(1333, 340) 0.775826 0.633754
+average precision:0.815578 processing time(ms):1475.55
+
+test045.bmp:
+coordinates accuracy IoU
+(1086, 350) 0.864623 0.761529
+(1093, 350) 0.839682 0.723665
+(1086, 340) 0.803302 0.671265
+(1100, 350) 0.781486 0.641343
+(1093, 340) 0.78013 0.639519
+average precision:0.813844 processing time(ms):1239.11
+
+test046.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):6905.49
+
+test047.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):6952.78
+
+test048.bmp:
+coordinates accuracy IoU
+(939, 360) 0.821698 0.697358
+(939, 370) 0.811164 0.682317
+average precision:0.816431 processing time(ms):4162.39
+
+test049.bmp:
+coordinates accuracy IoU
+(6, 360) 0.962588 0.927875
+(6, 380) 0.920077 0.851983
+(13, 360) 0.89717 0.813516
+(13, 380) 0.857547 0.750619
+(20, 360) 0.831751 0.711964
+average precision:0.893827 processing time(ms):505.051
+
+test050.bmp:
+coordinates accuracy IoU
+(1093, 240) 0.984375 0.969231
+(1086, 240) 0.9375 0.882353
+(1093, 220) 0.934847 0.877664
+(1100, 240) 0.91875 0.849711
+(1086, 220) 0.89033 0.802338
+average precision:0.93316 processing time(ms):628.893
+
+test051.bmp:
+coordinates accuracy IoU
+(799, 390) 0.920126 0.852068
+(809, 390) 0.860377 0.754967
+(819, 390) 0.800629 0.667541
+average precision:0.860377 processing time(ms):4475.02
+
+test052.bmp:
+coordinates accuracy IoU
+(29, 370) 0.854953 0.746653
+average precision:0.854953 processing time(ms):3705.88
+
+test053.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):6202.05
+
+test054.bmp:
+coordinates accuracy IoU
+(119, 360) 0.850392 0.739723
+(119, 366) 0.794322 0.658817
+(126, 360) 0.793699 0.657961
+(113, 366) 0.764062 0.618204
+(126, 366) 0.741367 0.589026
+average precision:0.788768 processing time(ms):1368.9
+
+test055.bmp:
+coordinates accuracy IoU
+(1079, 220) 0.9875 0.975309
+(1059, 220) 0.94375 0.893491
+(1099, 220) 0.925 0.860465
+average precision:0.952083 processing time(ms):3031.07
+
+test056.bmp:
+coordinates accuracy IoU
+(540, 300) 0.886792 0.79661
+(533, 300) 0.828231 0.706821
+average precision:0.857512 processing time(ms):2063.23
+
+test057.bmp:
+coordinates accuracy IoU
+(649, 380) 0.93125 0.871345
+average precision:0.93125 processing time(ms):3159.19
+
+test058.bmp:
+coordinates accuracy IoU
+(829, 220) 0.86875 0.767956
+(839, 220) 0.814112 0.686499
+(849, 240) 0.814112 0.686499
+(849, 220) 0.759473 0.612218
+(839, 200) 0.755542 0.607126
+average precision:0.802398 processing time(ms):3449.45
+
+test059.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):6837.56
+
+test060.bmp:
+coordinates accuracy IoU
+(1093, 380) 0.897116 0.813428
+(1086, 380) 0.854397 0.745805
+(1100, 380) 0.837309 0.720147
+(1106, 380) 0.786045 0.647507
+(1113, 380) 0.726237 0.570151
+average precision:0.820221 processing time(ms):2035.99
+
+test061.bmp:
+coordinates accuracy IoU
+(600, 460) 0.851651 0.741631
+(606, 460) 0.796108 0.661279
+(580, 550) 0.430425 0.27423
+(646, 460) 0.425825 0.270507
+(586, 560) 0.39375 0.245136
+average precision:0.579552 processing time(ms):971.333
+
+test062.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8019.94
+
+test063.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):6983.4
+
+test064.bmp:
+coordinates accuracy IoU
+(919, 506) 0.713846 0.555024
+(899, 506) 0.665937 0.49918
+(879, 506) 0.618028 0.447207
+(859, 506) 0.570119 0.398718
+average precision:0.641983 processing time(ms):8081.56
+
+test065.bmp:
+coordinates accuracy IoU
+(209, 260) 0.878479 0.783292
+(209, 240) 0.823054 0.699314
+average precision:0.850767 processing time(ms):2410.56
+
+test066.bmp:
+coordinates accuracy IoU
+(539, 380) 0.84424 0.730463
+(559, 380) 0.789773 0.652582
+(539, 390) 0.783503 0.644065
+(519, 390) 0.778448 0.637262
+average precision:0.798991 processing time(ms):5294.1
+
+test067.bmp:
+coordinates accuracy IoU
+(1120, 320) 0.893101 0.80685
+(1113, 320) 0.829953 0.709333
+(1106, 320) 0.766804 0.621803
+(1153, 320) 0.721698 0.564576
+(1100, 320) 0.712677 0.553612
+average precision:0.784847 processing time(ms):1399.6
+
+test068.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8356.46
+
+test069.bmp:
+coordinates accuracy IoU
+(419, 473) 0.915806 0.844689
+(426, 473) 0.872196 0.773359
+(413, 473) 0.863475 0.759749
+(433, 473) 0.811143 0.682288
+(406, 473) 0.802421 0.670036
+average precision:0.853008 processing time(ms):2451.68
+
+test070.bmp:
+coordinates accuracy IoU
+(406, 460) 0.873821 0.775916
+(413, 460) 0.809434 0.679873
+(419, 460) 0.754245 0.605452
+(426, 460) 0.689858 0.526553
+(433, 460) 0.625472 0.455045
+average precision:0.750566 processing time(ms):1239.94
+
+test071.bmp:
+coordinates accuracy IoU
+(720, 0) 0.987471 0.975251
+(713, 0) 0.940448 0.88759
+(720, 20) 0.931751 0.872223
+(726, 0) 0.931044 0.870984
+(713, 20) 0.887382 0.797562
+average precision:0.935619 processing time(ms):808.551
+
+test072.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8426.92
+
+test073.bmp:
+coordinates accuracy IoU
+(946, 470) 0.84375 0.72973
+(939, 470) 0.788031 0.650207
+(946, 460) 0.78125 0.641026
+(933, 470) 0.740271 0.587643
+(953, 460) 0.729658 0.574379
+average precision:0.776592 processing time(ms):1011.62
+
+test074.bmp:
+coordinates accuracy IoU
+(573, 460) 0.901415 0.820524
+(580, 460) 0.840743 0.725243
+(586, 460) 0.788738 0.651171
+(593, 460) 0.728066 0.572409
+(600, 460) 0.667394 0.500819
+average precision:0.785271 processing time(ms):807.622
+
+test075.bmp:
+coordinates accuracy IoU
+(739, 306) 0.871841 0.772799
+(729, 306) 0.827697 0.706043
+(749, 306) 0.816661 0.690132
+(739, 313) 0.806218 0.675348
+(729, 313) 0.765397 0.619954
+average precision:0.817563 processing time(ms):3895.44
+
+test076.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8088.95
+
+test077.bmp:
+coordinates accuracy IoU
+(799, 600) 0.965782 0.933828
+(799, 580) 0.959571 0.922284
+(779, 600) 0.917036 0.846783
+(779, 580) 0.911138 0.836781
+(779, 560) 0.852165 0.742411
+average precision:0.921138 processing time(ms):5627.72
+
+test078.bmp:
+coordinates accuracy IoU
+(879, 0) 0.921875 0.855072
+average precision:0.921875 processing time(ms):3759.14
+
+test079.bmp:
+coordinates accuracy IoU
+(369, 270) 0.88408 0.792243
+(379, 270) 0.823939 0.700592
+average precision:0.854009 processing time(ms):5131.66
+
+test080.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):6189.75
+
+test081.bmp:
+coordinates accuracy IoU
+(233, 640) 0.873821 0.775916
+(226, 640) 0.809434 0.679873
+(266, 640) 0.772641 0.629516
+(273, 640) 0.708255 0.548293
+(280, 640) 0.643868 0.474783
+average precision:0.761604 processing time(ms):1963.9
+
+test082.bmp:
+coordinates accuracy IoU
+(379, 260) 0.878174 0.782808
+(399, 260) 0.818025 0.692083
+(419, 260) 0.757876 0.610145
+average precision:0.818025 processing time(ms):4383.3
+
+test083.bmp:
+coordinates accuracy IoU
+(1086, 540) 0.818632 0.692953
+(1093, 540) 0.754245 0.605452
+(1093, 520) 0.705896 0.545471
+(1100, 540) 0.689858 0.526553
+(1100, 520) 0.645637 0.476709
+average precision:0.722854 processing time(ms):748.557
+
+test084.bmp:
+coordinates accuracy IoU
+(479, 450) 0.913734 0.84117
+average precision:0.913734 processing time(ms):3816.33
+
+test085.bmp:
+coordinates accuracy IoU
+(59, 400) 0.953605 0.911324
+(59, 410) 0.892476 0.805831
+(39, 410) 0.835266 0.717131
+average precision:0.893783 processing time(ms):5670.51
+
+test086.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8243.15
+
+test087.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):11946.9
+
+test088.bmp:
+coordinates accuracy IoU
+(419, 390) 0.809434 0.679873
+(429, 390) 0.75283 0.603631
+(439, 390) 0.696226 0.534009
+(439, 400) 0.647877 0.479156
+(449, 390) 0.639623 0.47018
+average precision:0.709198 processing time(ms):4290.58
+
+test089.bmp:
+coordinates accuracy IoU
+(439, 410) 0.872642 0.774059
+(449, 410) 0.813679 0.685885
+(459, 410) 0.754717 0.606061
+(469, 410) 0.695755 0.533454
+(479, 410) 0.636792 0.467128
+average precision:0.754717 processing time(ms):8636.59
+
+test090.bmp:
+coordinates accuracy IoU
+(669, 380) 0.962736 0.928149
+(679, 380) 0.93805 0.883328
+(689, 380) 0.876336 0.779892
+average precision:0.925708 processing time(ms):5030.86
+
+test091.bmp:
+coordinates accuracy IoU
+(1039, 280) 0.965713 0.9337
+(1039, 290) 0.965713 0.9337
+(1059, 280) 0.904976 0.826445
+(1059, 290) 0.904976 0.826445
+(1039, 300) 0.903409 0.823834
+average precision:0.928958 processing time(ms):12638.2
+
+test092.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8089.05
+
+test093.bmp:
+coordinates accuracy IoU
+(6, 400) 0.889151 0.800425
+(13, 400) 0.863502 0.759793
+(20, 380) 0.85908 0.752972
+(0, 400) 0.837854 0.720954
+(6, 420) 0.82783 0.706237
+average precision:0.855484 processing time(ms):762.642
+
+test094.bmp:
+coordinates accuracy IoU
+(829, 370) 0.975079 0.951369
+(839, 370) 0.912972 0.839878
+(839, 380) 0.855189 0.747013
+(849, 380) 0.797013 0.662528
+(859, 380) 0.738836 0.585837
+average precision:0.855818 processing time(ms):2911.75
+
+test095.bmp:
+coordinates accuracy IoU
+average precision:-nan(ind) processing time(ms):8228.1
+
+test096.bmp:
+coordinates accuracy IoU
+(1126, 380) 0.829953 0.709333
+(1133, 380) 0.772995 0.629986
+(1140, 370) 0.767925 0.623277
+(1106, 380) 0.732311 0.577674
+(1133, 390) 0.716981 0.558824
+average precision:0.764033 processing time(ms):1627.61
+
+test097.bmp:
+coordinates accuracy IoU
+(526, 390) 0.9375 0.882353
+(533, 380) 0.933962 0.876106
+(533, 390) 0.87559 0.77871
+(540, 380) 0.867925 0.766667
+(540, 390) 0.813679 0.685885
+average precision:0.885731 processing time(ms):1277.72
+
+test098.bmp:
+coordinates accuracy IoU
+(719, 280) 0.898197 0.815207
+(739, 280) 0.836677 0.719213
+(759, 280) 0.775157 0.632862
+(759, 260) 0.755408 0.606952
+(779, 280) 0.713636 0.55477
+average precision:0.795815 processing time(ms):6548.33
+
+test099.bmp:
+coordinates accuracy IoU
+(959, 220) 0.882817 0.790218
+(999, 220) 0.759777 0.612613
+(939, 100) 0.619534 0.448786
+(919, 80) 0.566673 0.395355
+(939, 80) 0.559385 0.388296
+average precision:0.677637 processing time(ms):6806.18
+
+test100.bmp:
+coordinates accuracy IoU
+(239, 393) 0.208494 0.116379
+(219, 399) 0.18099 0.0994993
+(239, 399) 0.166795 0.0909854
+(159, 226) 0.139735 0.0751157
+average precision:0.174003 processing time(ms):4786.02
+

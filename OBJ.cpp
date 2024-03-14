@@ -1428,7 +1428,7 @@ void TemplateMatching(int num, bool save)
 			DrawRectangle(output.x, output.y, output.templ_scaled_width, output.templ_scaled_height);
 	}
 	file << "average precision:" << (float) sum / res.size() << " " << "processing time(ms):" << 
-		std::chrono::duration<double, std::milli>(stamp_end - stamp_begin).count() << "\n\n";
+	std::chrono::duration<double, std::milli>(stamp_end - stamp_begin).count() << "\n\n";
 	file.close();
 
 	if(save)

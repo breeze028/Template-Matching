@@ -981,10 +981,10 @@ int main(int argc, char** argv){
 	// e.g.  Terminal:
 	// D:pj1\build> .\pj1.exe 1
 	// it will automatically search for the test001.bmp and obj001.bmp, then output debug information.
-	if(argc == 2)
+	if (argc == 2)
 	{
 		int id = std::stoi(argv[1]);
-		if(id < 1 || id > 100) return 0;
+		if (id < 1 || id > 100) return 0;
 
 		image_name = std::format("test{:03}.bmp", id);
 		templ_name = std::format("obj{:03}.bmp", id);
@@ -1003,9 +1003,9 @@ int main(int argc, char** argv){
 	TemplateMatching(0);
 
 
-	//match for test001.bmp ~ test100.bmp
+	// match for test001.bmp ~ test100.bmp
 	
-	// for(int m = 1; m < 101; ++m)
+	// for (int m = 1; m < 101; ++m)
 	// {
 	// 	std::clog << "\rimages remaining: " << 101 - m << ' ' << std::flush;
 	// 	image_name = std::format("test{:03}.bmp", m);
@@ -1022,7 +1022,7 @@ int main(int argc, char** argv){
 uint8_t R8G8B8A82GR(RGBA rgba)
 {
 	// quick calculation  
-    return (rgba.Red * 76 + rgba.Green * 150 + rgba.Blue * 30) >> 8;
+	return (rgba.Red * 76 + rgba.Green * 150 + rgba.Blue * 30) >> 8;
 }
 
 void DrawRectangle(unsigned int x, unsigned int y, unsigned int width, unsigned int height)
@@ -1032,8 +1032,8 @@ void DrawRectangle(unsigned int x, unsigned int y, unsigned int width, unsigned 
 	unsigned int image_height = image_bmp->GetHeight();
 
 	// Y-axis
-	for(unsigned int i = y; i < y + height; ++i)
-    {
+	for (unsigned int i = y; i < y + height; ++i)
+	{
         image_bmp->m_BitmapData[(image_height - i - 1) * image_width + x].Red = 0;
         image_bmp->m_BitmapData[(image_height - i - 1) * image_width + x].Green = 255;
         image_bmp->m_BitmapData[(image_height - i - 1) * image_width + x].Blue = 0;
@@ -1041,11 +1041,11 @@ void DrawRectangle(unsigned int x, unsigned int y, unsigned int width, unsigned 
         image_bmp->m_BitmapData[(image_height - i - 1) * image_width + x + width - 1].Red = 0;
         image_bmp->m_BitmapData[(image_height - i - 1) * image_width + x + width - 1].Green = 255;
         image_bmp->m_BitmapData[(image_height - i - 1) * image_width + x + width - 1].Blue = 0;
-    }
+	}
 
 	// X-axis
-	for(unsigned int i = x; i < x + width; ++i)
-    {
+	for (unsigned int i = x; i < x + width; ++i)
+	{
         image_bmp->m_BitmapData[(image_height - y - 1) * image_width + i].Red = 0;
         image_bmp->m_BitmapData[(image_height - y - 1) * image_width + i].Green = 255;
         image_bmp->m_BitmapData[(image_height - y - 1) * image_width + i].Blue = 0;
@@ -1053,18 +1053,18 @@ void DrawRectangle(unsigned int x, unsigned int y, unsigned int width, unsigned 
         image_bmp->m_BitmapData[(image_height - y - height) * image_width + i].Red = 0;
         image_bmp->m_BitmapData[(image_height - y - height) * image_width + i].Green = 255;
         image_bmp->m_BitmapData[(image_height - y - height) * image_width + i].Blue = 0;
-    }
+	}
 
 }
 
 void GenerateGaryscaleImage(CBitmap* bmp, uint8_t* gray_buffer)
 {
-	for(unsigned int i = 0; i < bmp->GetSize(); ++i)
-    {
+	for (unsigned int i = 0; i < bmp->GetSize(); ++i)
+	{
         bmp->m_BitmapData[i].Red = gray_buffer[i];
         bmp->m_BitmapData[i].Green = gray_buffer[i];
         bmp->m_BitmapData[i].Blue = gray_buffer[i];
-    }
+	}
 
 }
 
@@ -1078,9 +1078,9 @@ void GaussianFilter(CBitmap* bmp)
 	// instantiate the matrix
 	matrix<RGBA> pixels(bmp->GetHeight() + 4, bmp->GetWidth() + 4);
 
-	for(unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
+	for (unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
 	{
-		for(unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
+		for (unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
 		{
 			unsigned int index = (bmp->GetHeight() - i + 1) * bmp->GetWidth() + j - 2;
 			pixels[i][j] = bmp->m_BitmapData[index];			
@@ -1089,15 +1089,15 @@ void GaussianFilter(CBitmap* bmp)
 
 	// convonlution
 	// X-axis
-	for(unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
+	for (unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
 	{
-		for(unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
+		for (unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
 		{
 			float sumR = pixels[i][j].Red * weight[0];
 			float sumG = pixels[i][j].Green * weight[0];
 			float sumB = pixels[i][j].Blue * weight[0];
 
-			for(unsigned int m = 1; m < 3; ++m)
+			for (unsigned int m = 1; m < 3; ++m)
 			{
 				sumR += pixels[i][j + m].Red * weight[m];
 				sumG += pixels[i][j + m].Green * weight[m];
@@ -1114,15 +1114,15 @@ void GaussianFilter(CBitmap* bmp)
 		}
 	}
 	// Y-axis
-	for(unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
+	for (unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
 	{
-		for(unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
+		for (unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
 		{
 			float sumR = pixels[i][j].Red * weight[0];
 			float sumG = pixels[i][j].Green * weight[0];
 			float sumB = pixels[i][j].Blue * weight[0];
 
-			for(unsigned int m = 1; m < 3; ++m)
+			for (unsigned int m = 1; m < 3; ++m)
 			{
 				sumR += pixels[i + m][j].Red * weight[m];
 				sumG += pixels[i + m][j].Green * weight[m];
@@ -1140,9 +1140,9 @@ void GaussianFilter(CBitmap* bmp)
 	}
 
 	// write back to the bitmap
-	for(unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
+	for (unsigned int i = 2; i < bmp->GetHeight() + 2; ++i)
 	{
-		for(unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
+		for (unsigned int j = 2; j < bmp->GetWidth() + 2; ++j)
 		{
 			unsigned int index = (bmp->GetHeight() - i + 1) * bmp->GetWidth() + j - 2;
 			bmp->m_BitmapData[index] = pixels[i][j];		
@@ -1153,7 +1153,7 @@ void GaussianFilter(CBitmap* bmp)
 
 void GaussianFilterNTimes(CBitmap* bmp, unsigned int times)
 {
-	for(int i = 0; i < times; ++i)
+	for (int i = 0; i < times; ++i)
 	{
 		GaussianFilter(bmp);
 	}
@@ -1168,18 +1168,18 @@ void DownSample(CBitmap* bmp)
 	// initialize a matrix
 	matrix<RGBA> pixels(height, width);
 
-	for(unsigned int i = 0; i < height; ++i)
+	for (unsigned int i = 0; i < height; ++i)
 	{
-		for(unsigned int j = 0; j < width; ++j)
+		for (unsigned int j = 0; j < width; ++j)
 		{
 			pixels[i][j] = bmp->m_BitmapData[(height - i - 1) * width + j];
 		}
 	}
 
 	unsigned int index = 0;
-	for(unsigned int i = 0; i < height; i += 2)
+	for (unsigned int i = 0; i < height; i += 2)
 	{
-		for(unsigned int j = 0; j < width; j += 2)
+		for (unsigned int j = 0; j < width; j += 2)
 		{
 			bmp->m_BitmapData[index] = pixels[height - i - 1][j];
 			index++;
@@ -1193,7 +1193,7 @@ void DownSample(CBitmap* bmp)
 
 void DownSampleNTimes(CBitmap* bmp, unsigned int times)
 {
-	for(int i = 0; i < times; ++i)
+	for (int i = 0; i < times; ++i)
 	{
 		DownSample(bmp);
 	}
@@ -1201,15 +1201,15 @@ void DownSampleNTimes(CBitmap* bmp, unsigned int times)
 
 int Clamp(int x, int min, int max)
 {
-	if(x < min) return min;
-	if(x > max) return max;
+	if (x < min) return min;
+	if (x > max) return max;
 	return x;
 }
 
 // only support downscaling
 void NearestScaling(CBitmap* bmp, float scaleWidth, float scaleHeight)
 {
-	if(scaleWidth > 1 || scaleHeight > 1) return;
+	if (scaleWidth > 1 || scaleHeight > 1) return;
 
 	unsigned int src_width = bmp->GetWidth();
 	unsigned int src_height = bmp->GetHeight();
@@ -1219,9 +1219,9 @@ void NearestScaling(CBitmap* bmp, float scaleWidth, float scaleHeight)
 
 	matrix<RGBA> src_pixels(src_height, src_width);
 
-	for(unsigned int i = 0; i < src_height; ++i)
+	for (unsigned int i = 0; i < src_height; ++i)
 	{
-		for(unsigned int j = 0; j < src_width; ++j)
+		for (unsigned int j = 0; j < src_width; ++j)
 		{
 			src_pixels[i][j] = bmp->m_BitmapData[(src_height - i - 1) * src_width + j];
 		}
@@ -1229,9 +1229,9 @@ void NearestScaling(CBitmap* bmp, float scaleWidth, float scaleHeight)
 
 	matrix<RGBA> dst_pixels(dst_height, dst_width);
 
-	for(unsigned int i = 0; i < dst_height; ++i)
+	for (unsigned int i = 0; i < dst_height; ++i)
 	{
-		for(unsigned int j = 0; j < dst_width; ++j)
+		for (unsigned int j = 0; j < dst_width; ++j)
 		{
 			auto src_i = Clamp(static_cast<unsigned int>(i / scaleHeight), 0, src_height);
 			auto src_j = Clamp(static_cast<unsigned int>(j / scaleWidth), 0, src_width);
@@ -1241,9 +1241,9 @@ void NearestScaling(CBitmap* bmp, float scaleWidth, float scaleHeight)
 	}
  
 	unsigned int index = 0;
-	for(unsigned int i = 0; i < dst_height; i ++)
+	for (unsigned int i = 0; i < dst_height; i ++)
 	{
-		for(unsigned int j = 0; j < dst_width; j ++)
+		for (unsigned int j = 0; j < dst_width; j ++)
 		{
 			bmp->m_BitmapData[index] = dst_pixels[dst_height - i - 1][j];
 			index++;
@@ -1270,14 +1270,14 @@ void TemplateMatching(int num, bool save)
 
 	// read .bmp files
 	assert(image_bmp = std::make_unique<CBitmap>(image_name.c_str()));
-    assert(templ_bmp = std::make_unique<CBitmap>(templ_name.c_str()));
+	assert(templ_bmp = std::make_unique<CBitmap>(templ_name.c_str()));
 
 	std::vector<OUTPUTFORMAT> res;
 
 	bool flag = false;
-	for(float scaleWidth = 0.150f; scaleWidth >= 0.05f; scaleWidth -= 0.050f)
+	for (float scaleWidth = 0.150f; scaleWidth >= 0.05f; scaleWidth -= 0.050f)
 	{
-		for(float scaleHeight = 0.05f; scaleHeight <= 0.150f; scaleHeight += 0.050f)
+		for (float scaleHeight = 0.05f; scaleHeight <= 0.150f; scaleHeight += 0.050f)
 		{
 			res.clear();
 			std::unique_ptr<CBitmap> image_bmp_copy;
@@ -1309,18 +1309,18 @@ void TemplateMatching(int num, bool save)
     		unsigned int cols = image_bmp_copy->GetWidth() - templ_bmp->GetWidth() + 1;
 
     		matrix<float> ncc(rows, cols);
-    		for(unsigned int i = 0; i < rows; ++i)
+    		for (unsigned int i = 0; i < rows; ++i)
     		{
-        		for(unsigned int j = 0; j < cols; ++j)
+        		for (unsigned int j = 0; j < cols; ++j)
         		{
             		// the normalized cross correlation coefficient(NCC)
             		// more information on math:https://blog.csdn.net/fb_help/article/details/104162770
             		// i for image, t for template
             		unsigned int i_sum = 0;
             		unsigned int t_sum = 0;          
-            		for(unsigned int m = i; m < i + templ_bmp->GetHeight(); ++m)
+            		for (unsigned int m = i; m < i + templ_bmp->GetHeight(); ++m)
             		{
-                		for(unsigned int n = j; n < j + templ_bmp->GetWidth(); ++n)
+                		for (unsigned int n = j; n < j + templ_bmp->GetWidth(); ++n)
                 		{
                     		i_sum += image_gray_pixels[m][n];
                     		t_sum += templ_gray_pixels[m - i][n - j];
@@ -1331,9 +1331,9 @@ void TemplateMatching(int num, bool save)
 
             		float i_standard_deviation = 0;
             		float t_standard_deviation = 0;
-            		for(unsigned int m = i; m < i + templ_bmp->GetHeight(); ++m)
+            		for (unsigned int m = i; m < i + templ_bmp->GetHeight(); ++m)
             		{
-                		for(unsigned int n = j; n < j + templ_bmp->GetWidth(); ++n)
+                		for (unsigned int n = j; n < j + templ_bmp->GetWidth(); ++n)
                 		{
                     		i_standard_deviation += std::pow(image_gray_pixels[m][n] - i_mean, 2);
                     		t_standard_deviation += std::pow(templ_gray_pixels[m - i][n - j] - t_mean, 2);
@@ -1344,9 +1344,9 @@ void TemplateMatching(int num, bool save)
 
             		float num1 = 1.0f / (i_standard_deviation * t_standard_deviation * templ_bmp->GetSize());
             		float r = 0;
-            		for(unsigned int m = i; m < i + templ_bmp->GetHeight(); ++m)
+            		for (unsigned int m = i; m < i + templ_bmp->GetHeight(); ++m)
             		{
-                		for(unsigned int n = j; n < j + templ_bmp->GetWidth(); ++n)
+                		for (unsigned int n = j; n < j + templ_bmp->GetWidth(); ++n)
                 		{
                  			r += (image_gray_pixels[m][n] - i_mean) * (templ_gray_pixels[m - i][n - j] - t_mean);            
                 		}
@@ -1362,18 +1362,18 @@ void TemplateMatching(int num, bool save)
 			auto templ_scaled_width = static_cast<unsigned int>(templ_bmp->GetWidth() / scaleWidth);
 			auto templ_scaled_height = static_cast<unsigned int>(templ_bmp->GetHeight() / scaleHeight);
 
-			for(unsigned int i = 0; i < rows; ++i)
+			for (unsigned int i = 0; i < rows; ++i)
 			{
-				for(unsigned int j = 0; j < cols; ++j)
+				for (unsigned int j = 0; j < cols; ++j)
 				{
-					if(ncc[i][j] > 0.6f)
+					if (ncc[i][j] > 0.6f)
 					{
 						auto src_i = Clamp(static_cast<unsigned int>(i / scaleHeight), 0, image_bmp->GetHeight());
-			    		auto src_j = Clamp(static_cast<unsigned int>(j / scaleWidth), 0, image_bmp->GetWidth());
+			    			auto src_j = Clamp(static_cast<unsigned int>(j / scaleWidth), 0, image_bmp->GetWidth());
 						
 						auto S = templ_scaled_width * templ_scaled_height;
 						unsigned int I = 0;
-						if(std::abs(src_j - (int)ground_truth[num].x) >= templ_scaled_width || std::abs(src_i - (int)ground_truth[num].y) >= templ_scaled_height) 
+						if (std::abs(src_j - (int)ground_truth[num].x) >= templ_scaled_width || std::abs(src_i - (int)ground_truth[num].y) >= templ_scaled_height) 
 							continue;
 						else
 				 			I = (templ_scaled_width - std::abs(src_j - (int)ground_truth[num].x)) * ( templ_scaled_height - std::abs(src_i - (int)ground_truth[num].y));
@@ -1394,17 +1394,17 @@ void TemplateMatching(int num, bool save)
 			}
 
 			delete[] image_gray_buffer; image_gray_buffer = nullptr;
-	        delete[] templ_gray_buffer;	templ_gray_buffer = nullptr;
+	        	delete[] templ_gray_buffer;	templ_gray_buffer = nullptr;
 
 			std::sort(res.begin(), res.end(), DescendingWithAccuracy);
-			if(res.size() > 0 && res[0].accuracy >= 0.8f)
+			if (res.size() > 0 && res[0].accuracy >= 0.8f)
 			{
 				flag = true;
 				break;
 			}
 		}
 
-		if(flag)
+		if (flag)
 			break;		
 	}
 
@@ -1414,24 +1414,24 @@ void TemplateMatching(int num, bool save)
 	file << image_name << ":\n";
 	file << "coordinates accuracy IoU\n";
 
-	if(res.size() > 5)
+	if (res.size() > 5)
 		res.resize(5);
 
 	float sum = 0.0f;
 
-	for(auto& output : res)
+	for (auto& output : res)
 	{
 		file << '(' << output.x << ", " << output.y << ") " << output.accuracy << ' ' << output.IoU << '\n'; 
 		sum += output.accuracy;
 
-		if(save)
+		if (save)
 			DrawRectangle(output.x, output.y, output.templ_scaled_width, output.templ_scaled_height);
 	}
 	file << "average precision:" << (float) sum / res.size() << " " << "processing time(ms):" << 
 	std::chrono::duration<double, std::milli>(stamp_end - stamp_begin).count() << "\n\n";
 	file.close();
 
-	if(save)
+	if (save)
 	{
 		std::string output_name = "output_" + image_name;
 		image_bmp->Save(output_name.c_str());
